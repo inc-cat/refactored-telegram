@@ -84,6 +84,7 @@ h1 {
   text-align: center;
   padding: none;
   color: #fff;
+  padding-top: 1.5rem;
 }
 
 h2 {
@@ -107,13 +108,18 @@ button:active {
   background-color: black;
 }
 
+#subtitle {
+  margin-top: -1.5rem;
+}
+
 #image {
-  grid-area: image;
+  grid-area: img;
   width: 700px;
   max-height: 330px;
   justify-self: center;
   margin: 2rem;
   border-radius: 25px;
+  border: solid 2.5px #fff;
 }
 
 #legsButton {
@@ -129,11 +135,12 @@ button:active {
 #answerMessage {
   grid-area: aM;
   color: #fff;
+  margin-top: 1rem;
 }
 main {
   display: grid;
   grid-template-areas:
-    "image image image"
-    "btn1 . btn2"
-    "aM aM aM";
+    ". img img img img img ."
+    ". btn1 btn1 . btn2 btn2 ."
+    ". . aM aM aM . .";
 }
