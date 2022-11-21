@@ -103,6 +103,10 @@ button {
   color: #fff;
 }
 
+button:active {
+  background-color: black;
+}
+
 #image {
   grid-area: image;
   width: 700px;
