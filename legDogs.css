@@ -1,0 +1,135 @@
+/*RESET DEFAULTS*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #6a5ae0;
+  font-family: arial, helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: none;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 15px;
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  border: none;
+  color: #fff;
+}
+
+#image {
+  grid-area: image;
+  width: 700px;
+  max-height: 330px;
+  justify-self: center;
+  margin: 2rem;
+  border-radius: 25px;
+}
+
+#legsButton {
+  grid-area: btn1;
+  justify-self: end;
+}
+
+#hotdogsButton {
+  grid-area: btn2;
+  justify-self: start;
+}
+
+#answerMessage {
+  grid-area: aM;
+  color: #fff;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "image image image"
+    "btn1 . btn2"
+    "aM aM aM";
+}

@@ -60,7 +60,7 @@ function checkAnswer(event) {
     legsButton.hidden = true;
     hotdogsButton.hidden = true;
 
-    answerMessage.innerText = "";
+    answerMessage.innerText = "Refresh to Play again";
     console.log("YOU WIN");
   }
 }
